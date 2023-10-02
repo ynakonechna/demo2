@@ -30,12 +30,12 @@ CREATE TABLE IF NOT EXISTS `hostels` (
 -- ----------------------------
 -- Records of hostels
 -- ----------------------------
-INSERT IGNORE INTO `hostels` VALUES ('1', '1', '1', 'вул. Чорновола, 51');
-INSERT IGNORE INTO `hostels` VALUES ('2', '2', '2', 'вул. Чорновола, 55');
-INSERT IGNORE INTO `hostels` VALUES ('3', '3', '3', 'вул. Мірющенка, 62');
-INSERT IGNORE INTO `hostels` VALUES ('4', '4', '4', 'вул. Мірющенка, 60 ');
-INSERT IGNORE INTO `hostels` VALUES ('5', '5', '5', 'вул. Волинська, 24');
-INSERT IGNORE INTO `hostels` VALUES ('6', '6', '6', 'вул. Чорновола, 53');
+INSERT IGNORE INTO `hostels` VALUES ('1', '1', '1', 'St. Chornovola, 51');
+INSERT IGNORE INTO `hostels` VALUES ('2', '2', '2', 'St. Chornovola, 55');
+INSERT IGNORE INTO `hostels` VALUES ('3', '3', '3', 'St. Miryushchenko, 62');
+INSERT IGNORE INTO `hostels` VALUES ('4', '4', '4', 'St. Miryushchenko, 60');
+INSERT IGNORE INTO `hostels` VALUES ('5', '5', '5', 'St. Volynsk, 24');
+INSERT IGNORE INTO `hostels` VALUES ('6', '6', '6', 'St. Chornovola, 53');
 INSERT IGNORE INTO `hostels` VALUES ('7', '1', '7', '1');
 INSERT IGNORE INTO `hostels` VALUES ('8', '6', '10', '6666');
 INSERT IGNORE INTO `hostels` VALUES ('10', '1', '11', '');
@@ -56,20 +56,20 @@ CREATE TABLE IF NOT EXISTS `instruction_safety` (
 -- ----------------------------
 -- Records of instruction_safety
 -- ----------------------------
-INSERT IGNORE INTO `instruction_safety` VALUES ('1', '1', '2020-08-30', 'первинний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('2', '2', '2020-08-29', 'первинний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('3', '3', '2020-09-01', 'первинний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('4', '4', '2020-08-30', 'первинний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('5', '5', '2020-08-30', 'первинний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('6', '6', '2020-09-01', 'первинний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('7', '1', '2021-02-28', 'повторний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('8', '2', '2021-02-27', 'повторний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('9', '3', '2021-03-01', 'повторний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('10', '4', '2021-03-05', 'повторний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('11', '5', '2021-02-25', 'повторний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('12', '6', '2021-02-25', 'повторний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('13', '2', '2022-10-17', 'Первинний');
-INSERT IGNORE INTO `instruction_safety` VALUES ('14', '2', '2022-10-17', 'Первинний');
+INSERT IGNORE INTO `instruction_safety` VALUES ('1', '1', '2020-08-30', 'primary');
+INSERT IGNORE INTO `instruction_safety` VALUES ('2', '2', '2020-08-29', 'primary');
+INSERT IGNORE INTO `instruction_safety` VALUES ('3', '3', '2020-09-01', 'primary');
+INSERT IGNORE INTO `instruction_safety` VALUES ('4', '4', '2020-08-30', 'primary');
+INSERT IGNORE INTO `instruction_safety` VALUES ('5', '5', '2020-08-30', 'primary');
+INSERT IGNORE INTO `instruction_safety` VALUES ('6', '6', '2020-09-01', 'primary');
+INSERT IGNORE INTO `instruction_safety` VALUES ('7', '1', '2021-02-28', 'second');
+INSERT IGNORE INTO `instruction_safety` VALUES ('8', '2', '2021-02-27', 'second');
+INSERT IGNORE INTO `instruction_safety` VALUES ('9', '3', '2021-03-01', 'second');
+INSERT IGNORE INTO `instruction_safety` VALUES ('10', '4', '2021-03-05', 'second');
+INSERT IGNORE INTO `instruction_safety` VALUES ('11', '5', '2021-02-25', 'second');
+INSERT IGNORE INTO `instruction_safety` VALUES ('12', '6', '2021-02-25', 'second');
+INSERT IGNORE INTO `instruction_safety` VALUES ('13', '2', '2022-10-17', 'primary');
+INSERT IGNORE INTO `instruction_safety` VALUES ('14', '2', '2022-10-17', 'primary');
 
 -- ----------------------------
 -- Table structure for `managers`
@@ -87,13 +87,13 @@ CREATE TABLE IF NOT EXISTS `managers` (
 -- ----------------------------
 -- Records of managers
 -- ----------------------------
-INSERT IGNORE INTO `managers` VALUES ('1', 'Цімох Марія Карлівна', '0978866502', 'karlivna.manager@nuwm.edu.ua', '1', 'admin');
-INSERT IGNORE INTO `managers` VALUES ('2', 'Шарабура Людмила Миколаївна', '0978866740', 'sharabura.manager@nuwm.edu.ua', '2', 'admin');
-INSERT IGNORE INTO `managers` VALUES ('3', 'Черній Світлана Іванівна', '0738086674', 'chernii.manager@nuwm.edu.ua', '3', 'admin');
-INSERT IGNORE INTO `managers` VALUES ('4', 'Попельницька Галина Миколаївна', '0678563241', 'popelnytska.manager@nuwm.edu.ua', '4', 'admin');
-INSERT IGNORE INTO `managers` VALUES ('5', 'Якимів Ярослава Степанівна', '0671563248', 'yakymiv.manager@nuwm.edu.ua', '5', 'admin');
-INSERT IGNORE INTO `managers` VALUES ('6', 'Чемакіна Ольга Василівна', '0978563214', 'chemakina.manager@nuwm.edu.ua', '6', 'admin');
-INSERT IGNORE INTO `managers` VALUES ('7', 'ПІБ', '123123', 'Е-ее', '7', 'admin');
+INSERT IGNORE INTO `managers` VALUES ('1', 'Maria Karlivna Tsymokh', '0978866502', 'karlivna.manager@nuwm.edu.ua', '1', 'admin');
+INSERT IGNORE INTO `managers` VALUES ('2', 'Lyudmila Mykolaivna Sharabura', '0978866740', 'sharabura.manager@nuwm.edu.ua', '2', 'admin');
+INSERT IGNORE INTO `managers` VALUES ('3', 'Cherniy Svitlana Ivanovna', '0738086674', 'chernii.manager@nuwm.edu.ua', '3', 'admin');
+INSERT IGNORE INTO `managers` VALUES ('4', 'Halyna Mykolaivna Popelnytska', '0678563241', 'popelnytska.manager@nuwm.edu.ua', '4', 'admin');
+INSERT IGNORE INTO `managers` VALUES ('5', 'Yakimov Yaroslava Stepanivna', '0671563248', 'yakymiv.manager@nuwm.edu.ua', '5', 'admin');
+INSERT IGNORE INTO `managers` VALUES ('6', 'Olga Vasylivna Chemakina', '0978563214', 'chemakina.manager@nuwm.edu.ua', '6', 'admin');
+INSERT IGNORE INTO `managers` VALUES ('7', 'Full name', '123123', 'E-ee', '7', 'admin');
 
 -- ----------------------------
 -- Table structure for `payment`
@@ -112,15 +112,15 @@ CREATE TABLE IF NOT EXISTS `payment` (
 -- ----------------------------
 -- Records of payment
 -- ----------------------------
-INSERT IGNORE INTO `payment` VALUES ('1', '1', '2020-08-31', '7080', 'оплата за рік');
-INSERT IGNORE INTO `payment` VALUES ('2', '2', '2020-08-30', '3540', 'оплата за півроку');
-INSERT IGNORE INTO `payment` VALUES ('3', '3', '2020-08-30', '590', 'оплата за вересень');
-INSERT IGNORE INTO `payment` VALUES ('4', '4', '2020-08-31', '3540', 'оплата за півроку');
-INSERT IGNORE INTO `payment` VALUES ('5', '5', '2020-08-25', '7080', 'оплата за рік');
-INSERT IGNORE INTO `payment` VALUES ('6', '6', '2020-08-27', '590', 'оплата за вересень');
-INSERT IGNORE INTO `payment` VALUES ('7', '3', '2020-09-30', '590', 'оплата за жовтень');
-INSERT IGNORE INTO `payment` VALUES ('8', '6', '2020-09-27', '590', 'оплата за жовтень');
-INSERT IGNORE INTO `payment` VALUES ('9', '7', '2020-09-30', '200', 'майнове відшкодування');
+INSERT IGNORE INTO `payment` VALUES ('1', '1', '2020-08-31', '7080', 'payment per year');
+INSERT IGNORE INTO `payment` VALUES ('2', '2', '2020-08-30', '3540', 'payment for six months');
+INSERT IGNORE INTO `payment` VALUES ('3', '3', '2020-08-30', '590', 'payment for September');
+INSERT IGNORE INTO `payment` VALUES ('4', '4', '2020-08-31', '3540', 'payment for six months');
+INSERT IGNORE INTO `payment` VALUES ('5', '5', '2020-08-25', '7080', 'payment per year');
+INSERT IGNORE INTO `payment` VALUES ('6', '6', '2020-08-27', '590', 'payment for September');
+INSERT IGNORE INTO `payment` VALUES ('7', '3', '2020-09-30', '590', 'payment for October');
+INSERT IGNORE INTO `payment` VALUES ('8', '6', '2020-09-27', '590', 'payment for October');
+INSERT IGNORE INTO `payment` VALUES ('9', '7', '2020-09-30', '200', 'property compensation');
 
 -- ----------------------------
 -- Table structure for `profit`
@@ -139,12 +139,12 @@ CREATE TABLE IF NOT EXISTS `profit` (
 -- ----------------------------
 -- Records of profit
 -- ----------------------------
-INSERT IGNORE INTO `profit` VALUES ('1', '1', '2020-08-31', '7080', 'проживання');
-INSERT IGNORE INTO `profit` VALUES ('2', '2', '2020-08-30', '3540', 'проживання');
-INSERT IGNORE INTO `profit` VALUES ('3', '3', '2020-08-30', '590', 'проживання');
-INSERT IGNORE INTO `profit` VALUES ('4', '4', '2020-08-31', '3540', 'проживання');
-INSERT IGNORE INTO `profit` VALUES ('5', '1', '2022-10-04', '6000', 'ремонт');
-INSERT IGNORE INTO `profit` VALUES ('8', '1', '2022-10-05', '30000', 'ремонт');
+INSERT IGNORE INTO `profit` VALUES ('1', '1', '2020-08-31', '7080', 'residence');
+INSERT IGNORE INTO `profit` VALUES ('2', '2', '2020-08-30', '3540', 'residence');
+INSERT IGNORE INTO `profit` VALUES ('3', '3', '2020-08-30', '590', 'residence');
+INSERT IGNORE INTO `profit` VALUES ('4', '4', '2020-08-31', '3540', 'residence');
+INSERT IGNORE INTO `profit` VALUES ('5', '1', '2022-10-04', '6000', 'repair');
+INSERT IGNORE INTO `profit` VALUES ('8', '1', '2022-10-05', '30000', 'repair');
 
 -- ----------------------------
 -- Table structure for `rooms`
@@ -164,34 +164,34 @@ CREATE TABLE IF NOT EXISTS `rooms` (
 -- ----------------------------
 -- Records of rooms
 -- ----------------------------
-INSERT IGNORE INTO `rooms` VALUES ('1', '1', '1101', '3', '3 ліжка, 2 столи, 3 стільця', '2020-08-29');
-INSERT IGNORE INTO `rooms` VALUES ('2', '1', '1102', '3', '3 ліжка, 1 стіл, 3 стільця', '2019-08-30');
-INSERT IGNORE INTO `rooms` VALUES ('3', '1', '1103', '3', '3 ліжка, 1 стіл, 3 стільця,поличка', '2017-08-17');
-INSERT IGNORE INTO `rooms` VALUES ('4', '1', '1201', '3', '3 ліжка, 2 столи, 3 стільця', '2020-08-29');
-INSERT IGNORE INTO `rooms` VALUES ('5', '1', '1202', '3', '3 ліжка, 1 стіл, 3 стільця', '2019-08-27');
-INSERT IGNORE INTO `rooms` VALUES ('6', '10', '6', '5', '3 ліжка, 1 стіл, 3 стільця,поличка aaaa', '2022-08-31');
-INSERT IGNORE INTO `rooms` VALUES ('7', '2', '2101', '3', '3 ліжка, 1 стіл, 3 стільця', '2018-09-02');
-INSERT IGNORE INTO `rooms` VALUES ('8', '2', '2102', '3', '3 ліжка, 1 стіл, 3 стільця,поличка', '2020-08-01');
-INSERT IGNORE INTO `rooms` VALUES ('9', '2', '2103', '3', '3 ліжка, 2 столи, 3 стільця', '2019-09-02');
-INSERT IGNORE INTO `rooms` VALUES ('10', '2', '2201', '3', '3 ліжка, 2 столи, 3 стільця', '2019-08-27');
-INSERT IGNORE INTO `rooms` VALUES ('11', '2', '2202', '3', '3 ліжка, 1 стіл, 3 стільця', '2020-08-17');
-INSERT IGNORE INTO `rooms` VALUES ('12', '2', '2203', '3', '3 ліжка, 1 стіл, 3 стільця,поличка', '2019-08-04');
-INSERT IGNORE INTO `rooms` VALUES ('13', '3', '3101', '3', '3 ліжка, 1 стіл, 3 стільця', '2019-08-28');
-INSERT IGNORE INTO `rooms` VALUES ('14', '3', '3102', '3', '3 ліжка, 1 стіл, 3 стільця', '2020-08-28');
-INSERT IGNORE INTO `rooms` VALUES ('15', '3', '3201', '3', '3 ліжка, 1 стіл, 3 стільця,поличка', '2019-08-01');
-INSERT IGNORE INTO `rooms` VALUES ('16', '3', '3202', '3', '3 ліжка, 2 столи, 3 стільця', '2018-09-03');
-INSERT IGNORE INTO `rooms` VALUES ('17', '4', '4101', '3', '3 ліжка, 2 столи, 3 стільця', '2017-09-01');
-INSERT IGNORE INTO `rooms` VALUES ('18', '4', '4102', '3', '3 ліжка, 1 стіл, 3 стільця,поличка', '2019-08-28');
-INSERT IGNORE INTO `rooms` VALUES ('19', '4', '4201', '3', '3 ліжка, 2 столи, 3 стільця', '2020-07-30');
-INSERT IGNORE INTO `rooms` VALUES ('20', '4', '4202', '3', '3 ліжка, 1 стіл, 3 стільця,поличка', '2015-07-26');
-INSERT IGNORE INTO `rooms` VALUES ('21', '5', '5101', '3', '3 ліжка, 2 столи, 3 стільця', '2019-08-21');
-INSERT IGNORE INTO `rooms` VALUES ('22', '5', '5102', '3', '3 ліжка, 1 стіл, 3 стільця,поличка', '2020-09-11');
-INSERT IGNORE INTO `rooms` VALUES ('23', '5', '5201', '3', '3 ліжка, 1 стіл, 3 стільця', '2020-09-18');
-INSERT IGNORE INTO `rooms` VALUES ('24', '5', '5202', '3', '3 ліжка, 1 стіл, 3 стільця,поличка', '2019-08-15');
-INSERT IGNORE INTO `rooms` VALUES ('25', '6', '6101', '4', '4 ліжка, 1 стіл, 3 стільця,поличка', '2018-08-14');
-INSERT IGNORE INTO `rooms` VALUES ('26', '6', '6102', '4', '3 ліжка, 1 стіл, 4 стільця,поличка', '2018-07-29');
-INSERT IGNORE INTO `rooms` VALUES ('27', '6', '6201', '4', '4 ліжка, 2 стіл, 3 стільця', '2016-09-01');
-INSERT IGNORE INTO `rooms` VALUES ('28', '6', '6202', '4', '4 ліжка, 1 стіл, 3 стільця,поличка', '2015-08-02');
+INSERT IGNORE INTO `rooms` VALUES ('1', '1', '1101', '3', '3 beds, 2 tables, 3 chairs', '2020-08-29');
+INSERT IGNORE INTO `rooms` VALUES ('2', '1', '1102', '3', '3 beds, 1 стіл, 3 chairs', '2019-08-30');
+INSERT IGNORE INTO `rooms` VALUES ('3', '1', '1103', '3', '3 beds, 1 стіл, 3 chairs, a shelf', '2017-08-17');
+INSERT IGNORE INTO `rooms` VALUES ('4', '1', '1201', '3', '3 beds, 2 tables, 3 chairs', '2020-08-29');
+INSERT IGNORE INTO `rooms` VALUES ('5', '1', '1202', '3', '3 beds, 1 стіл, 3 chairs', '2019-08-27');
+INSERT IGNORE INTO `rooms` VALUES ('6', '10', '6', '5', '3 beds, 1 стіл, 3 chairs, a shelf aaaa', '2022-08-31');
+INSERT IGNORE INTO `rooms` VALUES ('7', '2', '2101', '3', '3 beds, 1 стіл, 3 chairs', '2018-09-02');
+INSERT IGNORE INTO `rooms` VALUES ('8', '2', '2102', '3', '3 beds, 1 стіл, 3 chairs, a shelf', '2020-08-01');
+INSERT IGNORE INTO `rooms` VALUES ('9', '2', '2103', '3', '3 beds, 2 tables, 3 chairs', '2019-09-02');
+INSERT IGNORE INTO `rooms` VALUES ('10', '2', '2201', '3', '3 beds, 2 tables, 3 chairs', '2019-08-27');
+INSERT IGNORE INTO `rooms` VALUES ('11', '2', '2202', '3', '3 beds, 1 стіл, 3 chairs', '2020-08-17');
+INSERT IGNORE INTO `rooms` VALUES ('12', '2', '2203', '3', '3 beds, 1 стіл, 3 chairs, a shelf', '2019-08-04');
+INSERT IGNORE INTO `rooms` VALUES ('13', '3', '3101', '3', '3 beds, 1 стіл, 3 chairs', '2019-08-28');
+INSERT IGNORE INTO `rooms` VALUES ('14', '3', '3102', '3', '3 beds, 1 стіл, 3 chairs', '2020-08-28');
+INSERT IGNORE INTO `rooms` VALUES ('15', '3', '3201', '3', '3 beds, 1 стіл, 3 chairs, a shelf', '2019-08-01');
+INSERT IGNORE INTO `rooms` VALUES ('16', '3', '3202', '3', '3 beds, 2 tables, 3 chairs', '2018-09-03');
+INSERT IGNORE INTO `rooms` VALUES ('17', '4', '4101', '3', '3 beds, 2 tables, 3 chairs', '2017-09-01');
+INSERT IGNORE INTO `rooms` VALUES ('18', '4', '4102', '3', '3 beds, 1 стіл, 3 chairs, a shelf', '2019-08-28');
+INSERT IGNORE INTO `rooms` VALUES ('19', '4', '4201', '3', '3 beds, 2 tables, 3 chairs', '2020-07-30');
+INSERT IGNORE INTO `rooms` VALUES ('20', '4', '4202', '3', '3 beds, 1 стіл, 3 chairs, a shelf', '2015-07-26');
+INSERT IGNORE INTO `rooms` VALUES ('21', '5', '5101', '3', '3 beds, 2 tables, 3 chairs', '2019-08-21');
+INSERT IGNORE INTO `rooms` VALUES ('22', '5', '5102', '3', '3 beds, 1 стіл, 3 chairs, a shelf', '2020-09-11');
+INSERT IGNORE INTO `rooms` VALUES ('23', '5', '5201', '3', '3 beds, 1 стіл, 3 chairs', '2020-09-18');
+INSERT IGNORE INTO `rooms` VALUES ('24', '5', '5202', '3', '3 beds, 1 стіл, 3 chairs, a shelf', '2019-08-15');
+INSERT IGNORE INTO `rooms` VALUES ('25', '6', '6101', '4', '4 beds, 1 стіл, 3 chairs, a shelf', '2018-08-14');
+INSERT IGNORE INTO `rooms` VALUES ('26', '6', '6102', '4', '3 beds, 1 стіл, 4 chairs, a shelf', '2018-07-29');
+INSERT IGNORE INTO `rooms` VALUES ('27', '6', '6201', '4', '4 beds, 2 стіл, 3 chairs', '2016-09-01');
+INSERT IGNORE INTO `rooms` VALUES ('28', '6', '6202', '4', '4 beds, 1 стіл, 3 chairs, a shelf', '2015-08-02');
 INSERT IGNORE INTO `rooms` VALUES ('30', '4', '111', '511', '-1', '2022-08-29');
 
 -- ----------------------------
@@ -207,25 +207,25 @@ CREATE TABLE IF NOT EXISTS `specialties` (
 -- ----------------------------
 -- Records of specialties
 -- ----------------------------
-INSERT IGNORE INTO `specialties` VALUES ('1', '051', 'Економіка');
-INSERT IGNORE INTO `specialties` VALUES ('2', '061', 'Журналістика');
-INSERT IGNORE INTO `specialties` VALUES ('3', '073', 'Менеджмент');
-INSERT IGNORE INTO `specialties` VALUES ('4', '075', 'Маркетинг');
-INSERT IGNORE INTO `specialties` VALUES ('5', '081', 'Право');
+INSERT IGNORE INTO `specialties` VALUES ('1', '051', 'Economy');
+INSERT IGNORE INTO `specialties` VALUES ('2', '061', 'Journalism');
+INSERT IGNORE INTO `specialties` VALUES ('3', '073', 'Management');
+INSERT IGNORE INTO `specialties` VALUES ('4', '075', 'Marketing');
+INSERT IGNORE INTO `specialties` VALUES ('5', '081', 'Right');
 INSERT IGNORE INTO `specialties` VALUES ('6', '101', 'Екологія');
-INSERT IGNORE INTO `specialties` VALUES ('7', '113', 'Прикладна математика');
-INSERT IGNORE INTO `specialties` VALUES ('9', '122', 'Комп\'ютерні науки');
-INSERT IGNORE INTO `specialties` VALUES ('10', '123', 'Компютерна інженерія');
-INSERT IGNORE INTO `specialties` VALUES ('11', '126', 'Інформаційні системи та технології');
-INSERT IGNORE INTO `specialties` VALUES ('12', '133', 'Галузеве машинобудування');
-INSERT IGNORE INTO `specialties` VALUES ('13', '141', 'Електроенергетика, електротехніка та електромеханіка');
-INSERT IGNORE INTO `specialties` VALUES ('14', '144', 'Теплоенергетика');
-INSERT IGNORE INTO `specialties` VALUES ('15', '151', 'Автоматизація та комп\'ютерно-інтегровані технології');
-INSERT IGNORE INTO `specialties` VALUES ('16', '171', 'Електроніка');
-INSERT IGNORE INTO `specialties` VALUES ('17', '184', 'Гірництво');
-INSERT IGNORE INTO `specialties` VALUES ('18', '227', 'Фізична терапія, ерготерапія');
-INSERT IGNORE INTO `specialties` VALUES ('19', '281', 'Публічне управління та адміністрування');
-INSERT IGNORE INTO `specialties` VALUES ('21', '015', 'Спеціальність');
+INSERT IGNORE INTO `specialties` VALUES ('7', '113', 'Applied Mathematics');
+INSERT IGNORE INTO `specialties` VALUES ('9', '122', 'Computer Science');
+INSERT IGNORE INTO `specialties` VALUES ('10', '123', 'Computer Engineering');
+INSERT IGNORE INTO `specialties` VALUES ('11', '126', 'Information systems and technologies');
+INSERT IGNORE INTO `specialties` VALUES ('12', '133', 'Industrial engineering');
+INSERT IGNORE INTO `specialties` VALUES ('13', '141', 'Electric power engineering, electrical engineering and electromechanics');
+INSERT IGNORE INTO `specialties` VALUES ('14', '144', 'Thermal power engineering');
+INSERT IGNORE INTO `specialties` VALUES ('15', '151', 'Automation and computer-integrated technologies');
+INSERT IGNORE INTO `specialties` VALUES ('16', '171', 'Electronics');
+INSERT IGNORE INTO `specialties` VALUES ('17', '184', 'Mining');
+INSERT IGNORE INTO `specialties` VALUES ('18', '227', 'Physical therapy, occupational therapy');
+INSERT IGNORE INTO `specialties` VALUES ('19', '281', 'Public management and administration');
+INSERT IGNORE INTO `specialties` VALUES ('21', '015', 'Specialty');
 
 -- ----------------------------
 -- Table structure for `students`
@@ -251,18 +251,18 @@ CREATE TABLE IF NOT EXISTS `students` (
 -- ----------------------------
 -- Records of students
 -- ----------------------------
-INSERT IGNORE INTO `students` VALUES ('1', '1', '14', 'Мороченець  Петро Дмитрович', '0654789214', 'mischenko_bg17.nuwm.edu.ua', 'м. Нетішин вул. Соборна 31', '0', '2017', '2022-12-25');
-INSERT IGNORE INTO `students` VALUES ('2', '1', '14', 'Оніщук Олександр Леонідович', '0974789214', 'onischyk_bg17.nuwm.edu.ua', 'м. Славута вул. Київська 2', '0', '2017', '2022-10-02');
-INSERT IGNORE INTO `students` VALUES ('3', '1', '14', 'Петренко Леонід Володимирович', '0970789211', 'petrenko_bg17.nuwm.edu.ua', 'с. Білка вул. Спортивна 89', '0', '2017', '2022-10-02');
-INSERT IGNORE INTO `students` VALUES ('4', '2', '14', 'Дерун Олена Миколаївна', '0678541258', 'deryn_bg20.nuwm.edu.ua', 'м. Здолбунів вул. Миру 45', '0', '2020', '2022-12-24');
-INSERT IGNORE INTO `students` VALUES ('5', '2', '14', 'Змій Лариса Василівна', '0678541295', 'zmii_bg19.nuwm.edu.ua', 'м. Здолбунів вул. Дерев\'яна 31', '0', '2019', null);
-INSERT IGNORE INTO `students` VALUES ('6', '7', '1', 'Тагаєв Тагай Тигранович', '0987452143', 'tagaev_em18.nuwm.edu.ua', 'м. Стамбул ', '1', '2018', null);
-INSERT IGNORE INTO `students` VALUES ('7', '7', '1', 'Саргсян Михаель Мухамедович', '0963257400', 'sargsyan_em19.nuwm.edu.ua', 'м. Стамбул ', '1', '2017', null);
-INSERT IGNORE INTO `students` VALUES ('8', '8', '3', 'Кривко Ірина Федорівна', '0678514589', 'kruvko_em19.nuwm.edu.ua', 'c. Нетреба вул. Перемоги 4', '0', '2019', null);
-INSERT IGNORE INTO `students` VALUES ('9', '8', '4', 'Рівна Діана Тимофіївна', '0731102258', 'rivna_em17.nuwm.edu.ua', 'м. Львів вул. Нова 56', '0', '2017', null);
+INSERT IGNORE INTO `students` VALUES ('1', '1', '14', 'Petro Dmytrovych Morochenets', '0654789214', 'mischenko_bg17.nuwm.edu.ua', 'm. Netishyn str. Soborna 31', '0', '2017', '2022-12-25');
+INSERT IGNORE INTO `students` VALUES ('2', '1', '14', 'Oleksandr Leonidovych Onishchuk', '0974789214', 'onischyk_bg17.nuwm.edu.ua', 'm. Slavuta str. Kyivska 2', '0', '2017', '2022-10-02');
+INSERT IGNORE INTO `students` VALUES ('3', '1', '14', 'Leonid Volodymyrovych Petrenko', '0970789211', 'petrenko_bg17.nuwm.edu.ua', 'with. Belka str. Sports 89', '0', '2017', '2022-10-02');
+INSERT IGNORE INTO `students` VALUES ('4', '2', '14', 'Olena Mykolayivna Derun', '0678541258', 'deryn_bg20.nuwm.edu.ua', 'Zdolbuniv str. Mir 45', '0', '2020', '2022-12-24');
+INSERT IGNORE INTO `students` VALUES ('5', '2', '14', 'Larisa Vasylivna Snake', '0678541295', 'zmii_bg19.nuwm.edu.ua', 'Zdolbuniv str. Derevyana 31', '0', '2019', null);
+INSERT IGNORE INTO `students` VALUES ('6', '7', '1', 'Tagay Tagay Tygranovych', '0987452143', 'tagaev_em18.nuwm.edu.ua', 'Istanbul', '1', '2018', null);
+INSERT IGNORE INTO `students` VALUES ('7', '7', '1', 'Sargsyan Mykhael Mukhamedovych', '0963257400', 'sargsyan_em19.nuwm.edu.ua', 'Istanbul', '1', '2017', null);
+INSERT IGNORE INTO `students` VALUES ('8', '8', '3', 'Iryna Fedorivna Kryvko', '0678514589', 'kruvko_em19.nuwm.edu.ua', 'c. Netreba st. Victories 4', '0', '2019', null);
+INSERT IGNORE INTO `students` VALUES ('9', '8', '4', 'Rivna Diana Timofievna', '0731102258', 'rivna_em17.nuwm.edu.ua', 'Lviv, st. Nova 56', '0', '2017', null);
 INSERT IGNORE INTO `students` VALUES ('10', null, '1', null, null, 'holovko@ukr.net', 'klkjl', '0', '2020', '2022-10-04');
-INSERT IGNORE INTO `students` VALUES ('11', '1', '1', 'Наконечна Ю.А. ', '123123', 'email@mail', '1', '0', '2020', '2022-10-20');
-INSERT IGNORE INTO `students` VALUES ('12', '1', '2', 'Наконечна Ю.А. ', '123', 'email@mail', 'klkjl', null, '2020', '2022-10-21');
+INSERT IGNORE INTO `students` VALUES ('11', '1', '1', 'Nakonechna Yu.A.', '123123', 'email@mail', '1', '0', '2020', '2022-10-20');
+INSERT IGNORE INTO `students` VALUES ('12', '1', '2', 'Nakonechna Yu.A.', '123', 'email@mail', 'klkjl', null, '2020', '2022-10-21');
 
 -- ----------------------------
 -- Table structure for `students_instruction`
@@ -282,16 +282,16 @@ CREATE TABLE IF NOT EXISTS `students_instruction` (
 -- ----------------------------
 -- Records of students_instruction
 -- ----------------------------
-INSERT IGNORE INTO `students_instruction` VALUES ('1', '1', '1', 'проінструктований');
-INSERT IGNORE INTO `students_instruction` VALUES ('2', '1', '2', 'проінструктований');
-INSERT IGNORE INTO `students_instruction` VALUES ('3', '1', '3', 'проінструктований');
-INSERT IGNORE INTO `students_instruction` VALUES ('4', '1', '4', 'проінструктований');
-INSERT IGNORE INTO `students_instruction` VALUES ('5', '1', '5', 'проінструктований');
-INSERT IGNORE INTO `students_instruction` VALUES ('6', '2', '6', 'проінструктований');
-INSERT IGNORE INTO `students_instruction` VALUES ('7', '2', '7', 'проінструктований');
+INSERT IGNORE INTO `students_instruction` VALUES ('1', '1', '1', 'instructed');
+INSERT IGNORE INTO `students_instruction` VALUES ('2', '1', '2', 'instructed');
+INSERT IGNORE INTO `students_instruction` VALUES ('3', '1', '3', 'instructed');
+INSERT IGNORE INTO `students_instruction` VALUES ('4', '1', '4', 'instructed');
+INSERT IGNORE INTO `students_instruction` VALUES ('5', '1', '5', 'instructed');
+INSERT IGNORE INTO `students_instruction` VALUES ('6', '2', '6', 'instructed');
+INSERT IGNORE INTO `students_instruction` VALUES ('7', '2', '7', 'instructed');
 INSERT IGNORE INTO `students_instruction` VALUES ('8', '2', '10', '');
-INSERT IGNORE INTO `students_instruction` VALUES ('9', '1', '7', 'проінструктований');
-INSERT IGNORE INTO `students_instruction` VALUES ('12', '1', '4', 'проінструктований');
+INSERT IGNORE INTO `students_instruction` VALUES ('9', '1', '7', 'instructed');
+INSERT IGNORE INTO `students_instruction` VALUES ('12', '1', '4', 'instructed');
 
 -- ----------------------------
 -- Table structure for `visiting`
@@ -312,12 +312,11 @@ CREATE TABLE IF NOT EXISTS `visiting` (
 -- ----------------------------
 INSERT IGNORE INTO `visiting` VALUES ('1', '1', null, '2021-02-01 10:20:56', '1');
 INSERT IGNORE INTO `visiting` VALUES ('2', '2', null, '2021-02-01 09:00:56', '1');
-INSERT IGNORE INTO `visiting` VALUES ('3', null, 'Електрик Олександр', '2021-02-01 08:00:00', '1');
+INSERT IGNORE INTO `visiting` VALUES ('3', null, 'Electrician Oleksandr', '2021-02-01 08:00:00', '1');
 INSERT IGNORE INTO `visiting` VALUES ('4', '3', null, '2021-02-01 16:00:00', '0');
 INSERT IGNORE INTO `visiting` VALUES ('5', '4', null, '2021-03-04 13:24:13', '0');
-INSERT IGNORE INTO `visiting` VALUES ('6', null, 'Сантехнік Петро', '2021-04-08 18:26:15', '0');
+INSERT IGNORE INTO `visiting` VALUES ('6', null, 'Plumber Petro', '2021-04-08 18:26:15', '0');
 INSERT IGNORE INTO `visiting` VALUES ('7', '1', null, '2021-04-14 13:26:50', '0');
 INSERT IGNORE INTO `visiting` VALUES ('8', '7', null, '2021-04-15 01:57:29', '1');
 INSERT IGNORE INTO `visiting` VALUES ('9', '5', null, '2021-04-18 14:28:01', '1');
 INSERT IGNORE INTO `visiting` VALUES ('10', '1', '', '2022-10-16 15:50:00', '1');
-INSERT IGNORE INTO `visiting` VALUES ('

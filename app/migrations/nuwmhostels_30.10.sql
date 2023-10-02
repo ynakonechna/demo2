@@ -212,7 +212,7 @@ INSERT IGNORE INTO `specialties` VALUES ('2', '061', 'Journalism');
 INSERT IGNORE INTO `specialties` VALUES ('3', '073', 'Management');
 INSERT IGNORE INTO `specialties` VALUES ('4', '075', 'Marketing');
 INSERT IGNORE INTO `specialties` VALUES ('5', '081', 'Right');
-INSERT IGNORE INTO `specialties` VALUES ('6', '101', 'Екологія');
+INSERT IGNORE INTO `specialties` VALUES ('6', '101', 'Ecology');
 INSERT IGNORE INTO `specialties` VALUES ('7', '113', 'Applied Mathematics');
 INSERT IGNORE INTO `specialties` VALUES ('9', '122', 'Computer Science');
 INSERT IGNORE INTO `specialties` VALUES ('10', '123', 'Computer Engineering');

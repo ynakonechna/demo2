@@ -6,7 +6,6 @@ pipeline {
     }
 
     environment {
-        SSH_CREDENTIALS = credentials('key')
         ECR_REPO = '404405619113.dkr.ecr.eu-north-1.amazonaws.com'
     }
 

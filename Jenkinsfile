@@ -37,7 +37,9 @@ pipeline {
             steps { 
                 script {
                     withAWS(role:"jenkins", roleSessionName: "role", useNode: true){
-                        sh "terraform init"
+                        dir('terraform') {
+                            sh "terraform init"
+                        }
                     }
                 }
                

@@ -9,7 +9,7 @@ module "network" {
 module "rds" {
     source = "./modules/rds"
     tags = var.tags
-    subnet_ids = module.network.public_subnet_ids
+    subnet_ids = module.network.private_subnet_ids
     vpc_id = module.network.vpc_id
     vpc_cidr_block = module.network.vpc_cidr_block
     db_name = var.db_name

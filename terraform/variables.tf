@@ -25,3 +25,7 @@ variable "db_name" {
 variable "db_username" {
   default = "admin"
 }
+
+variable "domain" {
+  default = "app.demo2.yulia1.pp.ua"
+}

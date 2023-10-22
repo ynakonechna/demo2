@@ -7,3 +7,5 @@ variable "subnet_ids" {}
 variable "public_subnets_ids" {}
 
 variable "db_secret_arm" {}
+
+variable "certificate_arn" {}

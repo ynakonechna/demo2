@@ -364,10 +364,27 @@ resource "aws_alb_listener" "alb_default_listener_https" {
   protocol          = "HTTP"
 
   default_action {
-    type = "forward"
-    target_group_arn = aws_alb_target_group.service_target_group.arn
+    type = "redirect"
+    redirect {
+      port        = 443
+      protocol    = "HTTPS"
+      status_code = "HTTP_301"
+    }
   }
 }
+
+resource "aws_lb_listener" "https_listener" {
+  load_balancer_arn = aws_alb.alb.arn
+  port              = 443
+  protocol          = "HTTPS"
+  certificate_arn   = var.certificate_arn
+
+  default_action {
+    target_group_arn = aws_alb_target_group.service_target_group.arn
+    type             = "forward"
+  }
+}
+
 
 resource "aws_alb" "alb" {
   name            = "alb"
@@ -410,4 +427,13 @@ resource "aws_vpc_security_group_ingress_rule" "allow_http" {
   from_port   = 80
   ip_protocol = "tcp"
   to_port     = 80
+}
+
+resource "aws_vpc_security_group_ingress_rule" "allow_https" {
+  security_group_id = aws_security_group.alb.id
+
+  cidr_ipv4   = "0.0.0.0/0"
+  from_port   = 443
+  ip_protocol = "tcp"
+  to_port     = 443
 }

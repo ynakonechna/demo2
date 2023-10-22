@@ -25,6 +25,12 @@ module "ecs" {
     subnet_ids = module.network.private_subnet_ids
     public_subnets_ids = module.network.public_subnet_ids
     db_secret_arm = module.rds.db_secret_arm
+    certificate_arn = module.https.certificate_arn
 
-    depends_on = [ module.rds ]
+    depends_on = [ module.rds, module.https ]
+}
+
+module "https" {
+  source       = "./modules/https"
+  domain       = var.domain
 }

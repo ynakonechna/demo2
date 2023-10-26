@@ -324,6 +324,13 @@ resource "aws_cloudwatch_log_group" "app" {
   tags = merge(var.tags, { "Name" = "ecs-service-app" })
 }
 
+resource "aws_cloudwatch_log_subscription_filter" "datadog_log_subscription_filter" {
+  name            = "datadog_log_subscription_filter"
+  log_group_name  = aws_cloudwatch_log_group.app.name
+  destination_arn = "arn:aws:lambda:eu-north-1:404405619113:function:datadog-forwarder-Forwarder-thFyifbXlDXX"
+  filter_pattern  = ""
+}
+
 resource "aws_iam_role" "ecs_task_execution_role" {
   name               = "ecs-task-execution-role"
   assume_role_policy = data.aws_iam_policy_document.task_assume_role_policy.json
